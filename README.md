@@ -1,2 +1,3 @@
-# Projeto1PromoMVC
-Sistema para controle de rifas e promoções 
+# Repositório do sistema gerenciador de rifas
+
+02/05/2022 Desenvolvimento do amiente de desenvolvimento.
