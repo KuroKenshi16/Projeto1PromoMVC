@@ -10,7 +10,7 @@
    if(empty($requestData['NOME'])){
        //Caso variavel esteja vazia
        $dados = array(
-           "tipo" => 'error'
+           "tipo" => 'error',
            "mensagem" => 'Existe(m) campo(s) obrigatório(s) não preenchido(s).'
        );
     } else {
@@ -27,12 +27,12 @@
                     ':a' => utf8_decode($requestData['NOME'])
                 ));
                 $dados = array(
-                    "tipo" => 'sucess'
+                    "tipo" => 'sucess',
                     "mensagem" => 'Salvo com sucesso.'
                 );
             } catch(PDOException $e) {
                 $dados = array(
-                    "tipo" => 'error'
+                    "tipo" => 'error',
                     "mensagem" => 'Não foi possível salvar registro: '.$e
                 );
             }
@@ -45,12 +45,12 @@
                     ':a' => utf8_decode($requestData['NOME'])
                 ));
                 $dados = array(
-                    "tipo" => 'sucess'
+                    "tipo" => 'sucess',
                     "mensagem" => 'Salvo com sucesso.'
                 );
             } catch(PDOException $e) {
                 $dados = array(
-                    "tipo" => 'error'
+                    "tipo" => 'error',
                     "mensagem" => 'Não foi possível atualizar registro: '.$e
                 );
             }
