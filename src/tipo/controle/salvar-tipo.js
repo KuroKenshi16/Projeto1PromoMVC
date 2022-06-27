@@ -13,7 +13,7 @@ $(document).ready(function() {
             assync: true,
             data: dados,
             url: 'src/tipo/modelo/salvar-tipo.php',
-            succes: function(dados){
+            success: function(dados){
                 Swal.fire({
                     title: 'SysRifa',
                     text: dados.mensagem,
@@ -22,6 +22,7 @@ $(document).ready(function() {
                 })
 
                 $('#modal-tipo').modal('hide')
+                $('#table-tipo').DataTable().ajax.reload()
             }
         })
     })
