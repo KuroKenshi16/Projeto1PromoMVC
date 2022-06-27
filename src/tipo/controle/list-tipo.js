@@ -8,15 +8,15 @@ $(document).ready(function(){
         },
         "columns": [{
             "data": 'ID',
-            "classname": 'text-center'
+            "className": 'text-center'
         },
         {
             "data": 'NOME',
-            "classname": 'text-center'
+            "className": 'text-center'
         },
         {
             "data": 'ID',
-            "classname": 'text-center',
+            "className": 'text-center',
             "orderable": false,
             "searchble": false,
             "render": function(data, type, row, meta){
