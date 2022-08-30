@@ -1,5 +1,5 @@
 $(document).ready(function(){
-    $('#table-tipo').on('click', 'button.btn-delete', function(e) {
+    $('#table-comprador').on('click', 'button.btn-delete', function(e) {
         e.preventDefault()
 
         let ID = `ID=${$(this).attr('id')}`
@@ -18,7 +18,7 @@ $(document).ready(function(){
                     dataType: 'json',
                     assync: true,
                     data: ID,
-                    url: 'src/tipo/modelo/delete-tipo.php',
+                    url: 'src/comprador/modelo/delete-comprador.php',
                     success: function(dados) {
                           Swal.fire({
                               title: 'SysRifa',
@@ -26,7 +26,7 @@ $(document).ready(function(){
                               icon: dados.tipo,
                               confirmButtonText: 'OK'
                           })
-                          $('#table-tipo').DataTable().ajax.reload()    
+                          $('#table-comprador').DataTable().ajax.reload()    
                          }
                    })
             }
