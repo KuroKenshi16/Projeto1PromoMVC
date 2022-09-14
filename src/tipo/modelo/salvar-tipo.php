@@ -27,15 +27,12 @@ if(empty($requestData['NOME'])){
         try{
             $stmt = $pdo->prepare('INSERT INTO TIPO (NOME) VALUES (:a)');
             $stmt->execute(array(
-    ':a' => utf8_decode($requestData['NOME'])
+    ':a' => $requestData['NOME']
 ));
 $dados  = array(
     "tipo" => 'success',
     "mensagem" => 'Ta registrado meu consagrado'
-
 );
-
-
         }catch(PDOException $e){
             $dados  = array(
                 "tipo" => 'erro',
