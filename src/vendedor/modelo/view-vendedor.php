@@ -23,12 +23,12 @@ if($resultado){
         'mensagem' => '',
         'dados' => $result
     );
+
 }else{
     $dados = array(
         'tipo'=> 'error',
-        'mensagem' => 'Não foi possivel obter o registro solicitado.',
+        'mensagem' => 'Não foi possivel obter o registro solicitado',
         'dados' => array()
     );
 }
-
 echo json_encode($dados);

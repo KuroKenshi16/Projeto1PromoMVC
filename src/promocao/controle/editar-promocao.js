@@ -1,6 +1,6 @@
 $(document).ready(function(){
 
-    $('#table-promocao').on('click', 'button.btn-edit', function(e){
+    $('#table-tipo').on('click', 'button.btn-edit', function(e){
         e.preventDefault()
 
         //Limpar todas as informações já existentes em nossa modal
@@ -25,11 +25,11 @@ $(document).ready(function(){
                 $('.modal-body').load('src/promocao/visao/form-promocao.html', function () {
                     $('#TITULO').val(dado.dados.TITULO)
                     $('#DESCRICAO').val(dado.dados.DESCRICAO)
-                    $('#DATA_INICO').val(dado.dados.DATA_INICO)
+                    $('#DATA_INICIO').val(dado.dados.DATA_INICIO)
                     $('#DATA_FIM').val(dado.dados.DATA_FIM)
                     $('#DATA_SORTEIO').val(dado.dados.DATA_SORTEIO)
                     $('#ARRECADACAO').val(dado.dados.ARRECADACAO)
-                    $('#VALO_RIFA').val(dado.dados.VALOR_RIFA)
+                    $('#VALOR_RIFA').val(dado.dados.VALOR_RIFA)
                     $('#ID').val(dado.dados.ID)
                 })
                 $('.btn-salvar').show()

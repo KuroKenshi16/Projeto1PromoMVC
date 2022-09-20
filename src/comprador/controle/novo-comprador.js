@@ -1,23 +1,21 @@
-$(document).ready(function() {
+$(document).ready(function(){
+    $('.btn-novo').click(function(event){
+        event.preventDefault()
 
-    $('.btn-novo').click(function(e) {
-        e.preventDefault()
-
-       //Limpar todas as informações já existentes em na modal
+       //Limpar todas as informações já existentes em nossa modal
        $('.modal-title').empty()
        $('.modal-body').empty()
 
-       //Incluir novos textos no cabeçalho da janela modal
+       //Incluir nonos textos no cabeçalho da minha janela modal
        $('.modal-title').append('Adicionar novo registro')
 
-       //Incluir o formulário dentro do corpo da janela modal
+       //Incluir o nosso formulario dentro da nossa janela modal
        $('.modal-body').load('src/comprador/visao/form-comprador.html')
 
-       //Inclui função no otão salvar para demonstração de novo registro
+       //Iremos incluir uma função no botão salvar para demonstrar que é um novo registro
        $('.btn-salvar').attr('data-operation', 'insert')
 
-       //abrir janela modal
-       $('#modal-comprador').modal('show')
+       //Abrir nossa janela modal
+       $('#modal-tipo').modal('show')
     })
-
 })

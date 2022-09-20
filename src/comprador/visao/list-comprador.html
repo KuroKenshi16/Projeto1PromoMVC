@@ -1,42 +1,46 @@
-<div class="row t-5">
-    <div class="col"-12 mt-5>
-     <div class="card shadow mt-5">
-         <div class="card-header">
-             <div class="card-title">
-                 <div class="row">
-                     <div class="col-12 col-md-10">
-                         <h4 class="text-dark">
-                             Gerenciar tipos de compradores
-                         </h4>
-                     </div>
-                     <div class="col-12 col-md-2">
-                           <button class="btn btn-dark btn-block btn-novo">
-                               Adicionar
-                           </button>
-                      </div>
+<div class="row mt-5">
+    <div class="col-12 mt-5">
+        <div class="card shadow mt-5">
+            <div class="card-header">
+                <div class="card-title">
+                    <div class="row">
+                        <div class="col-12 col-md-10">
+                            <h4 class="text-dark">
+                                Gerenciar Compradores
+                            </h4>
+                        </div>
+                        <div class="col-12 col-md-2">
+                            <button class="btn btn-dark btn-block btn-novo">
+                                Salvar Compradores
+                            </button>
+                        </div>
                     </div>
-                 </div>
-                 <div class="card-body">
-                     <div class="table-responsive">
-                         <table class="table tbale-hover" id="table-comprador">
-                             <thead class="thead-dark">
-                                 <tr>
-                                     <th scope="col" class="text-center">ID</th>
-                                     <th scope="col" class="text-center">NOME</th>
-                                     <th scope="col" class="text-center">CELULAR</th>
-                                     <th scope="col" class="text-center">AÇÕES</th>
-                                 </tr>
-                             </thead>
-                         </table>
-                     </div>
-                 </div>
-             </div>
-         </div>
-      </div>
+                </div>
+                <div class="card-body">
+                    <div class="table-responsive">
+                        <table class="table table-hover" id="table-comprador">
+                            <thead class="thead-dark">
+                              <tr>
+                                  <th scope="col" class="text-center">ID</th>
+                                  <th scope="col" class="text-center">NOME</th>
+                                  <th scope="col" class="text-center">CELULAR</th>
+                              </tr>
+                            </thead>
+                            <tbody>
+                                <tr>
+                                    <th class="text-center">01</th>
+                                    <th class="text-center">Marcia</th>
+                                    <th class="text-center">11-9999-9999</th>
+                                </tr>
+                            </tbody>
+                        </table>
+                    </div>
+                </div>
+            </div>
+        </div>
     </div>
 </div>
-
-<div id="modal-comprador" class="modal fade" tabindex="-1" role="dialog" aria-labelledby="my-modal-title" aria-hidden="true">
+<div id="modal-tipo" class="modal fade" tabindex="-1" role="dialog" aria-labelledby="my-modal-title" aria-hidden="true">
     <div class="modal-dialog modal-dialog-centered" role="document">
         <div class="modal-content">
             <div class="modal-header">
@@ -49,16 +53,11 @@
                 <p>Content</p>
             </div>
             <div class="modal-footer">
-                <button class="btn btn-secondary" data-dismiss="modal" aria-label="Close"><i class="fa-solid fa-circle-xmark"></i> Fechar</button>
-                <button class="btn btn-primary btn-salvar"><i class="fa-solid fa-floppy-disk"></i> Salvar</button>
+                <button class="btn btn-secondary" data-dismiss="modal" aria-label="Close"><i class="fa-solid fa-circle-xmark"></i>Fechar</button>
+                <button class="btn btn-primary btn-salvar"><i class="fa-solid fa-down-to-bracket"></i>Salvar</button>
             </div>
         </div>
     </div>
 </div>
-
 <script src="src/comprador/controle/novo-comprador.js"></script>
 <script src="src/comprador/controle/salvar-comprador.js"></script>
-<script src="src/comprador/controle/list-comprador.js"></script>
-<script src="src/comprador/controle/visualizar-comprador.js"></script>
-<script src="src/comprador/controle/editar-comprador.js"></script>
-<script src="src/comprador/controle/delete-comprador.js"></script>

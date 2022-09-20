@@ -6,7 +6,7 @@
                     <div class="row">
                         <div class="col-12 col-md-10">
                             <h4 class="text-dark">
-                                Promoções
+                                Gerenciar tipos de Promoções
                             </h4>
                         </div>
                         <div class="col-12 col-md-2">
@@ -18,16 +18,18 @@
                 </div>
                 <div class="card-body">
                     <div class="table-responsive">
-                        <table class="table table-hover" id="table-promocao">
+                        <table class="table table-hover" id="table-tipo">
                             <thead class="thead-dark">
                               <tr>
                                   <th scope="col" class="text-center">ID</th>
-                                  <th scope="col" class="text-center">TÍTULO</th>
-                                  <th scope="col" class="text-center">DATA INICIO</th>
-                                  <th scope="col" class="text-center">DATA FIM</th>
+                                  <th scope="col" class="text-center">TITULO</th>
+                                  <th scope="col" class="text-center">DESCRICAO</th>
+                                  <th scope="col" class="text-center">DATA DE INICIO</th>
+                                  <th scope="col" class="text-center">DATA FINAL</th>
                                   <th scope="col" class="text-center">DATA DO SORTEIO</th>
                                   <th scope="col" class="text-center">ARRECADAÇÃO</th>
                                   <th scope="col" class="text-center">VALOR DA RIFA</th>
+                                  <th scope="col" class="text-center">AÇÕES</th>
                               </tr>
                             </thead>
                         </table>
@@ -37,11 +39,12 @@
         </div>
     </div>
 </div>
-<div id="modal-promocao" class="modal fade" tabindex="-1" role="dialog" aria-labelledby="my-modal-title" aria-hidden="true">
+
+<div id="modal-promocao" class="modal fade" tabindex="-1" role="dialog" aria-labelledby="modal-promocao-title" aria-hidden="true">
     <div class="modal-dialog modal-dialog-centered" role="document">
         <div class="modal-content">
             <div class="modal-header">
-                <h5 class="modal-title" id="my-modal-title">Title</h5>
+                <h5 class="modal-title" id="modal-promocao-title">Title</h5>
                 <button class="close" data-dismiss="modal" aria-label="Close">
                     <span aria-hidden="true">&times;</span>
                 </button>
@@ -50,15 +53,16 @@
                 <p>Content</p>
             </div>
             <div class="modal-footer">
-                <button class="btn btn-secondary" data-dismiss="modal" aria-label="Close"><i class="fa-solid fa-circle-xmark"></i>Fechar</button>
-                <button class="btn btn-primary btn-salvar"><i class="fa-solid fa-down-to-bracket"></i>Salvar</button>
+                <button class="btn btn-secondary" data-dismiss="modal" aria-label="Close"><i class="fa-solid fa-circle-xmark"></i> Fechar </button>
+                <button class="btn btn-primary btn-salvar"><i class="fa-solid fa-floppy-disk"></i> Salvar </button>
             </div>
         </div>
     </div>
 </div>
-<script src="src/promocao/controle/novo-promocao.js"></script>
-<script src="src/promocao/controle/list-promocao.js"></script>
+
 <script src="src/promocao/controle/salvar-promocao.js"></script>
+<script src="src/promocao/controle/novo-promocao.js"></script>
 <script src="src/promocao/controle/visualizar-promocao.js"></script>
+<script src="src/promocao/controle/list-promocao.js"></script>
 <script src="src/promocao/controle/editar-promocao.js"></script>
 <script src="src/promocao/controle/delete-promocao.js"></script>

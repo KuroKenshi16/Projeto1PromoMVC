@@ -1,6 +1,6 @@
 $(document).ready(function(){
 
-    $('#table-promocao').on('click', 'button.btn-view', function(e){
+    $('#table-tipo').on('click', 'button.btn-view', function(e){
         e.preventDefault()
 
         //Limpar todas as informações já existentes em nossa modal
@@ -22,17 +22,17 @@ $(document).ready(function(){
             if(dado.tipo == 'success'){
                 $('.modal-body').load('src/promocao/visao/form-promocao.html', function () {
                     $('#TITULO').val(dado.dados.TITULO)
-                    $('#TITULO').attr('readonly', 'true')
+                    $('#TITULO').attr('readonly', 'true'),
                     $('#DESCRICAO').val(dado.dados.DESCRICAO)
-                    $('#DESCRICAO').attr('readonly', 'true')
+                    $('#DESCRICAO').attr('readonly', 'true'),
                     $('#DATA_INICIO').val(dado.dados.DATA_INICIO)
-                    $('#DATA_INICIO').attr('readonly', 'true')
+                    $('#DATA_INICIO').attr('readonly', 'true'),
                     $('#DATA_FIM').val(dado.dados.DATA_FIM)
-                    $('#DATA_FIM').attr('readonly', 'true')
+                    $('#DATA_FIM').attr('readonly', 'true'),
                     $('#DATA_SORTEIO').val(dado.dados.DATA_SORTEIO)
-                    $('#DATA_SORTEIO').attr('readonly', 'true')
+                    $('#DATA_SORTEIO').attr('readonly', 'true'),
                     $('#ARRECADACAO').val(dado.dados.ARRECADACAO)
-                    $('#ARRECADACAO').attr('readonly', 'true')
+                    $('#ARRECADACAO').attr('readonly', 'true'),
                     $('#VALOR_RIFA').val(dado.dados.VALOR_RIFA)
                     $('#VALOR_RIFA').attr('readonly', 'true')
                 })

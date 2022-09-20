@@ -1,5 +1,5 @@
 $(document).ready(function(){
-    $('.btn-novo').click(function(event){
+    $('.btn-new').click(function(event){
         event.preventDefault()
 
        //Limpar todas as informações já existentes em nossa modal
@@ -16,10 +16,12 @@ $(document).ready(function(){
             dataType: 'JSON',
             assync: true,
             url: 'src/tipo/modelo/all-tipo.php',
-            succes: function(dados){
+            success: function(dados){
                 for(const dado of dados){
                     $('#TIPO_ID').append(`<option value="${dado.ID}">${dado.NOME}</option>`)
+                    console.log("teste");
                 }
+
             }
         })
        })
@@ -28,6 +30,6 @@ $(document).ready(function(){
        $('.btn-salvar').attr('data-operation', 'insert')
 
        //Abrir nossa janela modal
-       $('#modal-promocao').modal('show')
+       $('#modal-vendedor').modal('show')
     })
 })
